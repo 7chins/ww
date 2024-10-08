@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 <style>
     .container {
-        width:560;
+        width: 560;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -25,19 +27,33 @@
 
         text-decoration: none;
     }
+
+    .iframe-wrapper {
+        height: 315px;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+
+    .iframe-wrapper iframe {
+        height: 435px;
+        margin-top: -60px;
+    }
 </style>
+
 
 <div class="container">
 
-<h1>WESTERN WOLVES</h1>
+    <h1>WESTERN WOLVES</h1>
 
-<p>Змагальна команда SQUAD</p>
+    <p>Змагальницька команда SQUAD</p>
 
-<a href="javascript:document.getElementById('intro').muted=false">ВКЛЮЧИТИ ЗВУК</a>
+    <div class="iframe-wrapper">
+        <iframe width="560" height="315"
+            src="https://www.youtube-nocookie.com/embed/kb8kI5nlCfo?si=gPfBlZ428CDkUWy5&amp;controls=0&amp;rel=0"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-<video id="intro" controls autoplay muted width="480">
-    <source src="intro.mp4">
-</video>
-
-<a href="https://discord.gg/dfJtaeutqV">СТВОРИТИ ЗАЯВКУ</a>
+    <a href="https://discord.gg/dfJtaeutqV">СТВОРИТИ ЗАЯВКУ</a>
 </div>
