@@ -4,7 +4,7 @@
 
 <style>
     .container {
-        width: 560;
+        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -12,15 +12,16 @@
     }
 
     body {
-        background: #eee;
+        background: #111;
         display: flex;
         justify-content: center;
+        color: #888;
     }
 
     a {
-        color: #48e;
+        color: #fff;
 
-        border: 1px solid #abc;
+        border: 1px solid #222;
         border-radius: 12px;
 
         padding: 8px 16px;
@@ -29,14 +30,21 @@
     }
 
     .iframe-wrapper {
-        height: 315px;
+        /* height: 315px; */
         overflow: hidden;
         border-radius: 12px;
+        width: 100%;
+        aspect-ratio: 16/9;
+
     }
 
     .iframe-wrapper iframe {
-        height: 435px;
         margin-top: -60px;
+
+        margin-bottom: -60px;
+
+        width: 100%;
+        height: calc(100% + 120px);
     }
 </style>
 
@@ -48,8 +56,7 @@
     <p>Змагальницька команда SQUAD</p>
 
     <div class="iframe-wrapper">
-        <iframe width="560" height="315"
-            src="https://www.youtube-nocookie.com/embed/kb8kI5nlCfo?si=gPfBlZ428CDkUWy5&amp;controls=0&amp;rel=0"
+        <iframe src="https://www.youtube-nocookie.com/embed/kb8kI5nlCfo?si=gPfBlZ428CDkUWy5&amp;controls=0&amp;rel=0"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
