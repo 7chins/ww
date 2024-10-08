@@ -1,3 +1,43 @@
 <!DOCTYPE html>
 
-<h1>Hello!</h1>
+<style>
+    .container {
+        width:560;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    body {
+        background: #eee;
+        display: flex;
+        justify-content: center;
+    }
+
+    a {
+        color: #48e;
+
+        border: 1px solid #abc;
+        border-radius: 12px;
+
+        padding: 8px 16px;
+
+        text-decoration: none;
+    }
+</style>
+
+<div class="container">
+
+<h1>WESTERN WOLVES</h1>
+
+<p>Змагальна команда SQUAD</p>
+
+<a href="javascript:document.getElementById('intro').muted=false">ВКЛЮЧИТИ ЗВУК</a>
+
+<video id="intro" controls autoplay muted width="480">
+    <source src="intro.mp4">
+</video>
+
+<a href="https://discord.gg/dfJtaeutqV">СТВОРИТИ ЗАЯВКУ</a>
+</div>
